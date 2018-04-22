@@ -23,7 +23,7 @@ class File: Equatable, Hashable, CustomStringConvertible {
         
         let result = """
 public extension Localizations {
-    public enum \(fileName): Localizable {
+    public enum \(fileName): String, Localizable {
 \(cases)
     }
 }
