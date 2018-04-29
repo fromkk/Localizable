@@ -15,6 +15,15 @@ extension String {
             let secondIndex = component.index(component.startIndex, offsetBy: 1)
             let firstChar = String(component[component.startIndex..<secondIndex])
             return component.replacingCharacters(in: component.startIndex..<secondIndex, with: firstChar.uppercased())
-        }.joined()
+        }.joined().snakeToCamel()
+    }
+    
+    func snakeToCamel(with separator: String = "_") -> String {
+        let components = self.components(separatedBy: separator)
+        return components.map { component -> String in
+            let secondIndex = component.index(component.startIndex, offsetBy: 1)
+            let firstChar = String(component[component.startIndex..<secondIndex])
+            return component.replacingCharacters(in: component.startIndex..<secondIndex, with: firstChar.uppercased())
+            }.joined()
     }
 }

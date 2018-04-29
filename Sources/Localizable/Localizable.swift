@@ -39,11 +39,13 @@ class Localizable {
         }
         
         print("done!")
+        exit(0)
     }
     
     private func toFilename(for key: String, with separator: String) -> String {
         guard let firstKey = key.components(separatedBy: separator).first else {
-            fatalError("firstKey get failed")
+            print("firstKey get failed")
+            exit(1)
         }
         
         let startIndex = firstKey.startIndex
