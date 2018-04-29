@@ -51,6 +51,6 @@ class Localizable {
         let startIndex = firstKey.startIndex
         let secondIndex = firstKey.index(startIndex, offsetBy: 1)
         let firstChar = String(firstKey[startIndex..<secondIndex]).uppercased()
-        return firstKey.replacingCharacters(in: startIndex..<secondIndex, with: firstChar)
+        return firstKey.replacingCharacters(in: startIndex..<secondIndex, with: firstChar).snakeToCamel()
     }
 }
