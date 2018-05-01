@@ -11,7 +11,7 @@
 		OBJ_26 /* Document.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_10 /* Document.swift */; };
 		OBJ_27 /* String+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_12 /* String+Extensions.swift */; };
 		OBJ_28 /* FIle.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_13 /* FIle.swift */; };
-		OBJ_29 /* Localizable.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_14 /* Localizable.swift */; };
+		OBJ_29 /* Generator.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_14 /* Generator.swift */; };
 		OBJ_30 /* LocalizableParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_15 /* LocalizableParser.swift */; };
 		OBJ_31 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_16 /* main.swift */; };
 		OBJ_38 /* Package.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_6 /* Package.swift */; };
@@ -22,7 +22,7 @@
 		OBJ_10 /* Document.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Document.swift; sourceTree = "<group>"; };
 		OBJ_12 /* String+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extensions.swift"; sourceTree = "<group>"; };
 		OBJ_13 /* FIle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FIle.swift; sourceTree = "<group>"; };
-		OBJ_14 /* Localizable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Localizable.swift; sourceTree = "<group>"; };
+		OBJ_14 /* Generator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Generator.swift; sourceTree = "<group>"; };
 		OBJ_15 /* LocalizableParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalizableParser.swift; sourceTree = "<group>"; };
 		OBJ_16 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		OBJ_6 /* Package.swift */ = {isa = PBXFileReference; explicitFileType = sourcecode.swift; path = Package.swift; sourceTree = "<group>"; };
@@ -63,7 +63,7 @@
 			name = Products;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		OBJ_5 /*  */ = {
+		OBJ_5 = {
 			isa = PBXGroup;
 			children = (
 				OBJ_6 /* Package.swift */,
@@ -71,7 +71,6 @@
 				OBJ_17 /* Tests */,
 				OBJ_18 /* Products */,
 			);
-			name = "";
 			sourceTree = "<group>";
 		};
 		OBJ_7 /* Sources */ = {
@@ -89,7 +88,7 @@
 				OBJ_9 /* Arguments.swift */,
 				OBJ_10 /* Document.swift */,
 				OBJ_13 /* FIle.swift */,
-				OBJ_14 /* Localizable.swift */,
+				OBJ_14 /* Generator.swift */,
 				OBJ_15 /* LocalizableParser.swift */,
 				OBJ_16 /* main.swift */,
 			);
@@ -145,7 +144,7 @@
 			knownRegions = (
 				en,
 			);
-			mainGroup = OBJ_5 /*  */;
+			mainGroup = OBJ_5;
 			productRefGroup = OBJ_18 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -165,7 +164,7 @@
 				OBJ_26 /* Document.swift in Sources */,
 				OBJ_27 /* String+Extensions.swift in Sources */,
 				OBJ_28 /* FIle.swift in Sources */,
-				OBJ_29 /* Localizable.swift in Sources */,
+				OBJ_29 /* Generator.swift in Sources */,
 				OBJ_30 /* LocalizableParser.swift in Sources */,
 				OBJ_31 /* main.swift in Sources */,
 			);

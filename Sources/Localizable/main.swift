@@ -30,11 +30,13 @@ if let _ = argument["help"] {
 
 guard let inputFile = argument["inputFile"] else {
     print("inputFile not setted")
+    printHelp()
     exit(1)
 }
 
 guard let outputDirectory = argument["outputDirectory"] else {
     print("outputDirectory not setted")
+    printHelp()
     exit(1)
 }
 
@@ -79,5 +81,5 @@ let dataLocalization = localization.data(using: .utf8)!
 
 try! dataLocalization.write(to: URL(fileURLWithPath: outputDirectory).appendingPathComponent("Localization.swift"))
 
-let localizable = Localizable(inputFile: inputFile, outputDirectory: outputDirectory, separator: separator)
-localizable.generate()
+let generator = Generator(inputFile: inputFile, outputDirectory: outputDirectory, separator: separator)
+generator.generate()

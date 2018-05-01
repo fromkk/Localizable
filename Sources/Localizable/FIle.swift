@@ -18,7 +18,7 @@ class File: Equatable, Hashable, CustomStringConvertible {
     
     func generate(in outputDirectory: String, with separator: String) {
         let cases = keys.map { key -> String in
-            return String(format: "        case %@ = \"%@\"", key.convertToKey(with: separator), key)
+            return String(format: "        case %@ = \"%@\"", key.convertToCaseKey(with: separator), key)
         }.joined(separator: "\n")
         
         let result = """

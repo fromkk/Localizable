@@ -1,5 +1,5 @@
 //
-//  Localizable.swift
+//  Generator.swift
 //  Localizable
 //
 //  Created by Kazuya Ueoka on 2018/04/22.
@@ -8,9 +8,15 @@
 
 import Foundation
 
-class Localizable {
+class Generator {
+    
+    /// input file path
     let inputFile: String
+    
+    /// output directory path
     let outputDirectory: String
+    
+    /// separator for keys
     let separator: String
     
     init(inputFile: String, outputDirectory: String, separator: String) {
@@ -19,6 +25,7 @@ class Localizable {
         self.separator = separator
     }
     
+    /// perform generate
     func generate() {
         let localizations = try! LocalizableParser(path: inputFile).parse()
         var files: Set<File> = []
@@ -42,6 +49,12 @@ class Localizable {
         exit(0)
     }
     
+    /// key to filename
+    ///
+    /// - Parameters:
+    ///   - key: String
+    ///   - separator: Separator
+    /// - Returns: String
     private func toFilename(for key: String, with separator: String) -> String {
         guard let firstKey = key.components(separatedBy: separator).first else {
             print("firstKey get failed")
